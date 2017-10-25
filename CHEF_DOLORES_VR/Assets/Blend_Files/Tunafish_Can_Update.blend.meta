@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: 702e51c83197a3f45bc69581a12b0e8a
+timeCreated: 1507169102
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Tuna_Can
+    100002: Tuna_Can_001
+    100004: Tuna_Can_002
+    100006: Tuna_Can_003
+    100008: Tuna_Can_004
+    100010: Tuna_Can_005
+    100012: Tuna_Can_006
+    100014: Tuna_Can_007
+    100016: Tuna_Can_008
+    100018: Tuna_Can_Lid
+    100020: Tuna_Can_Meat
+    100022: Tuna_Can_Meat_001
+    100024: Tuna_Can_Meat_002
+    100026: //RootNode
+    400000: Tuna_Can
+    400002: Tuna_Can_001
+    400004: Tuna_Can_002
+    400006: Tuna_Can_003
+    400008: Tuna_Can_004
+    400010: Tuna_Can_005
+    400012: Tuna_Can_006
+    400014: Tuna_Can_007
+    400016: Tuna_Can_008
+    400018: Tuna_Can_Lid
+    400020: Tuna_Can_Meat
+    400022: Tuna_Can_Meat_001
+    400024: Tuna_Can_Meat_002
+    400026: //RootNode
+    2300000: Tuna_Can
+    2300002: Tuna_Can_001
+    2300004: Tuna_Can_002
+    2300006: Tuna_Can_003
+    2300008: Tuna_Can_004
+    2300010: Tuna_Can_005
+    2300012: Tuna_Can_006
+    2300014: Tuna_Can_007
+    2300016: Tuna_Can_008
+    2300018: Tuna_Can_Lid
+    2300020: Tuna_Can_Meat
+    2300022: Tuna_Can_Meat_001
+    2300024: Tuna_Can_Meat_002
+    3300000: Tuna_Can
+    3300002: Tuna_Can_001
+    3300004: Tuna_Can_002
+    3300006: Tuna_Can_003
+    3300008: Tuna_Can_004
+    3300010: Tuna_Can_005
+    3300012: Tuna_Can_006
+    3300014: Tuna_Can_007
+    3300016: Tuna_Can_008
+    3300018: Tuna_Can_Lid
+    3300020: Tuna_Can_Meat
+    3300022: Tuna_Can_Meat_001
+    3300024: Tuna_Can_Meat_002
+    4300000: Tuna_Can_008
+    4300002: Tuna_Can_007
+    4300004: Tuna_Can_006
+    4300006: Tuna_Can_003
+    4300008: Tuna_Can_004
+    4300010: Tuna_Can_002
+    4300012: Tuna_Can_001
+    4300014: Tuna_Can_Meat_002
+    4300016: Tuna_Can_Meat_001
+    4300018: Tuna_Can_Meat
+    4300020: Tuna_Can_Lid
+    4300022: Tuna_Can
+    4300024: Tuna_Can_005
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

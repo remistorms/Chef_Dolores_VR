@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 1d2adbf5de8c6164f9b3f8f7fbf46612
+timeCreated: 1508453241
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chiles
+    100004: Chopping_Board
+    100006: Cube
+    100008: Cube_001
+    100010: Cube_002
+    100012: Empty
+    100014: Empty_001
+    100016: Empty_002
+    100018: onion
+    100020: Text
+    100022: tomato
+    100024: Tuna_Can
+    100026: Tuna_Can_001
+    100028: Tuna_Can_002
+    100030: Tuna_Can_004
+    100032: Tuna_Can_005
+    400000: //RootNode
+    400002: chiles
+    400004: Chopping_Board
+    400006: Cube
+    400008: Cube_001
+    400010: Cube_002
+    400012: Empty
+    400014: Empty_001
+    400016: Empty_002
+    400018: onion
+    400020: Text
+    400022: tomato
+    400024: Tuna_Can
+    400026: Tuna_Can_001
+    400028: Tuna_Can_002
+    400030: Tuna_Can_004
+    400032: Tuna_Can_005
+    2300000: //RootNode
+    2300002: chiles
+    2300004: Chopping_Board
+    2300006: Cube
+    2300008: Cube_001
+    2300010: Cube_002
+    2300012: onion
+    2300014: Text
+    2300016: tomato
+    2300018: Tuna_Can
+    2300020: Tuna_Can_001
+    2300022: Tuna_Can_002
+    2300024: Tuna_Can_004
+    2300026: Tuna_Can_005
+    3300000: //RootNode
+    3300002: chiles
+    3300004: Chopping_Board
+    3300006: Cube
+    3300008: Cube_001
+    3300010: Cube_002
+    3300012: onion
+    3300014: Text
+    3300016: tomato
+    3300018: Tuna_Can
+    3300020: Tuna_Can_001
+    3300022: Tuna_Can_002
+    3300024: Tuna_Can_004
+    3300026: Tuna_Can_005
+    4300000: Cube
+    4300002: Cube_001
+    4300004: Text
+    4300006: Tuna_Can_005
+    4300008: Tuna_Can_004
+    4300010: Tuna_Can_002
+    4300012: Tuna_Can_001
+    4300014: Tuna_Can
+    4300016: Chopping_Board
+    4300018: Cube_002
+    4300020: chiles
+    4300022: onion
+    4300024: tomato
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
