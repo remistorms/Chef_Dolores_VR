@@ -12,6 +12,7 @@ public class Score_Script : MonoBehaviour {
 	public int total_time;
 	public int time_left;
 	public Text score_text, time_text;
+	public GameObject[] infos_canvas;
 
 	void Awake()
 	{

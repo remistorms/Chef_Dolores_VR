@@ -31,6 +31,7 @@ public class Raycaster : MonoBehaviour {
 		else 
 		{
 			obj_in_sight = null;
+			Trash_Script.instance.CloseLid ();
 		}
 
 		if (obj_in_sight != null && obj_in_sight.name == "help_trigger_abrelatas") 
@@ -46,6 +47,11 @@ public class Raycaster : MonoBehaviour {
 		if (obj_in_sight != null && obj_in_sight.name == "help_trigger_ingredientes") 
 		{
 			Help_UI_Script.instance.ShowIngredientesHelp ();		
+		}
+
+		if (obj_in_sight != null && obj_in_sight.tag == "trash") 
+		{
+			Trash_Script.instance.OpenLid ();	
 		}
 	}
 
@@ -95,10 +101,10 @@ public class Raycaster : MonoBehaviour {
 				obj_in_sight.GetComponent<Collider_Button> ().ActivateButton ();
 			} 
 
-			else 
-			{
-				
-			}
+			else if (obj_in_sight!= null && obj_in_sight.tag == "trash" && held_item != null) {
+				Trash_Script.instance.TrowGarbage (held_item);
+			} 
 		}
+
 	}
 }

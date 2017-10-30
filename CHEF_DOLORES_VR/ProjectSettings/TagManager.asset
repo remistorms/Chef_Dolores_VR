@@ -8,6 +8,7 @@ TagManager:
   - dish
   - raw_ingredient
   - button
+  - trash
   layers:
   - Default
   - TransparentFX
