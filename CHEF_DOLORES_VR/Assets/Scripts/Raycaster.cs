@@ -36,17 +36,17 @@ public class Raycaster : MonoBehaviour {
 
 		if (obj_in_sight != null && obj_in_sight.name == "help_trigger_abrelatas") 
 		{
-			Help_UI_Script.instance.ShowAbrelatasHelp ();		
+			//Help_UI_Script.instance.ShowAbrelatasHelp ();		
 		}
 
 		if (obj_in_sight != null && obj_in_sight.name == "help_trigger_tabla") 
 		{
-			Help_UI_Script.instance.ShowTablaHelp ();		
+			//Help_UI_Script.instance.ShowTablaHelp ();		
 		}
 
 		if (obj_in_sight != null && obj_in_sight.name == "help_trigger_ingredientes") 
 		{
-			Help_UI_Script.instance.ShowIngredientesHelp ();		
+			//Help_UI_Script.instance.ShowIngredientesHelp ();		
 		}
 
 		if (obj_in_sight != null && obj_in_sight.tag == "trash") 

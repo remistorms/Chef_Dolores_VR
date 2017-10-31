@@ -10,6 +10,7 @@ public class Chopping_Board : MonoBehaviour {
 	public Animator chopping_board_animator;
 	GameObject object_to_chop;
 	GameObject chopped_veggie_to_spawn;
+	public AudioSource chopping_board_audio_source;
 
 
 	void FixedUpdate()
@@ -24,6 +25,7 @@ public class Chopping_Board : MonoBehaviour {
 	{
 		is_chopping = true;
 		chopping_board_animator.SetTrigger ("chop");
+		Sound_Manager.instance.PlaySoundFX (chopping_board_audio_source, 0, 0.45f);
 		yield return new WaitForSeconds (1.5f);
 		SelectVeggie (object_to_chop);
 		GameObject chopped = Instantiate (chopped_veggie_to_spawn, transform.position, Quaternion.identity) as GameObject;
