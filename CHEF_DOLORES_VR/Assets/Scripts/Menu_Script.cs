@@ -64,7 +64,7 @@ public class Menu_Script : MonoBehaviour {
 		int myint = 10;
 		for (int i = 0; i < 10; i++) 
 		{
-			number_counter.text = myint.ToString();
+			//number_counter.text = myint.ToString();
 			myint--;
 			yield return new WaitForSeconds (1);
 		}

@@ -45,9 +45,12 @@ public class Dish_Script : MonoBehaviour {
 		//transform.DOMove (new Vector3(0.9f, 2.7f, -4.6f), 0.5f);
 		transform.DOScale (Vector3.zero, 0.5f);
 		//transform.DOLocalRotate (new Vector3 (0, 1800, 0), 1.0f);
-		Score_Script.instance.AddScore (total_points);
+		//Score_Script.instance.AddScore (total_points);
 		//Destroy (this.gameObject, 0.7f);
 		StartCoroutine(PopRoutine());
+		MyGameManager.instance.AddPlatillo (1);
+		MyGameManager.instance.AddScore (total_points);
+		MyGameManager.instance.SpawnNewDish ();
 	}
 
 	IEnumerator StartDishRoutine()
@@ -215,7 +218,7 @@ public class Dish_Script : MonoBehaviour {
 		}
 
 		total_ingredients = needs_tuna + needs_chile + needs_lettuce + needs_onion + needs_tomato;
-		total_points = total_ingredients * 50;
+		total_points = total_ingredients * 100;
 	}
 
 	IEnumerator PopRoutine()

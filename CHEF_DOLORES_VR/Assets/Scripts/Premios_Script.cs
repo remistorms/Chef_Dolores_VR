@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class Premios_Script : MonoBehaviour {
+public class ButtonSelectorScript : MonoBehaviour {
 
 	int selected_premio;
 	public Button[] premio_button;
@@ -15,7 +15,7 @@ public class Premios_Script : MonoBehaviour {
 		unselected_color = premio_button [0].image.color;
 	}
 
-	public void SelectPremio(int id)
+	public void SelectButton(int id)
 	{
 		foreach (var item in premio_button) 
 		{
