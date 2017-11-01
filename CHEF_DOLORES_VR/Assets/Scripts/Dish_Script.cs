@@ -17,6 +17,7 @@ public class Dish_Script : MonoBehaviour {
 	public int total_points;
 	public Transform bow_position;
 	public GameObject dish_canvas;
+	public AudioSource dish_audio_source;
 	//int last_random = 0;
 
 	void Update()
@@ -35,6 +36,7 @@ public class Dish_Script : MonoBehaviour {
 		dish_canvas.transform.localScale = Vector3.zero;
 		transform.localScale = Vector3.zero;
 		StartCoroutine (StartDishRoutine ());
+		dish_audio_source = GetComponent<AudioSource> ();
 		Debug.Log ("START HAS BEEN CALLED ON DISH");
 	}
 
@@ -44,6 +46,7 @@ public class Dish_Script : MonoBehaviour {
 		dish_canvas.transform.DOScale (Vector3.zero, 0.2f);
 		//transform.DOMove (new Vector3(0.9f, 2.7f, -4.6f), 0.5f);
 		transform.DOScale (Vector3.zero, 0.5f);
+		Sound_Manager.instance.PlaySoundFX (dish_audio_source, 3, 0);
 		//transform.DOLocalRotate (new Vector3 (0, 1800, 0), 1.0f);
 		//Score_Script.instance.AddScore (total_points);
 		//Destroy (this.gameObject, 0.7f);

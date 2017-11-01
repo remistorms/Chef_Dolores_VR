@@ -11,10 +11,12 @@ public class Raycaster : MonoBehaviour {
 	public Transform hold_position;
 	Ray myRay;
 	RaycastHit myHit;
+	public AudioSource player_audio_source;
 
 	void Start()
 	{
 		instance = this;
+		player_audio_source = GetComponent<AudioSource> ();
 	}
 
 	void FixedUpdate()
@@ -66,6 +68,7 @@ public class Raycaster : MonoBehaviour {
 				held_item.transform.DOLocalMove (Vector3.zero, 0.2f);
 				held_item.transform.DOLocalRotate (Vector3.zero, 0.2f);
 				obj_in_sight.GetComponent<Can_opener_script> ().has_can = true;
+				Sound_Manager.instance.PlaySoundFX (player_audio_source, 2, 0);
 				held_item = null;
 			}
 
@@ -80,6 +83,7 @@ public class Raycaster : MonoBehaviour {
 				held_item.transform.DOLocalMove (Vector3.zero, 0.2f);
 				held_item.transform.DOLocalRotate (Vector3.zero, 0.2f);
 				obj_in_sight.GetComponent<Chopping_Board> ().has_ingredient = true;
+				Sound_Manager.instance.PlaySoundFX (player_audio_source, 2, 0);
 				held_item = null;
 			}
 
@@ -93,6 +97,7 @@ public class Raycaster : MonoBehaviour {
 				obj_in_sight.transform.DOLocalMove (Vector3.zero, 0.2f);
 				obj_in_sight.transform.DOLocalRotate (Vector3.zero, 0.2f);
 				held_item = obj_in_sight;
+				Sound_Manager.instance.PlaySoundFX (player_audio_source, 2, 0);
 				Debug.Log ("Clicked on ingredient" + obj_in_sight.name);
 
 			} 

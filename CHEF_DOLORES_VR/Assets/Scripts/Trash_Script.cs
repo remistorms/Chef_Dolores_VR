@@ -11,6 +11,7 @@ public class Trash_Script : MonoBehaviour {
 	public Transform trash_end_point;
 	public Vector3 original_scale;
 	public bool lid_up = false;
+	public AudioSource trash_audio_source;
 
 	void Awake()
 	{
@@ -18,6 +19,7 @@ public class Trash_Script : MonoBehaviour {
 		trash_canvas.transform.localPosition = new Vector3 (0, 0.5f, 0);
 		trash_canvas.transform.localScale = Vector3.zero;
 		original_scale = transform.localScale;
+		trash_audio_source = GetComponent<AudioSource> ();
 	}
 
 	public void TrowGarbage(GameObject garbage)
@@ -26,6 +28,7 @@ public class Trash_Script : MonoBehaviour {
 		garbage.transform.parent = null;
 		garbage.transform.DOMove (trash_end_point.position, 0.3f);
 		garbage.transform.DOScale (Vector3.zero, 0.3f);
+		Sound_Manager.instance.PlaySoundFX (trash_audio_source, 5, 0);
 		StartCoroutine (animate_can ());
 		Destroy (garbage, 0.3f);
 	}

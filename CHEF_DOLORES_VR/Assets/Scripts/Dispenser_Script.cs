@@ -10,10 +10,12 @@ public class Dispenser_Script : MonoBehaviour {
 	public Transform start_point, end_point;
 	GameObject dispensed_ingredient;
 	public bool item_spawned = false;
+	public AudioSource dispenser_audio_source;
 
 	void Awake()
 	{
 		dispenser_animator = GetComponentInChildren<Animator> ();
+		dispenser_audio_source = GetComponent<AudioSource> ();
 	}
 
 	void Update()
@@ -36,6 +38,7 @@ public class Dispenser_Script : MonoBehaviour {
 			dispensed_ingredient.transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
 			dispensed_ingredient.transform.DOMove (end_point.transform.position, 0.2f);
 			dispensed_ingredient.transform.DOScale (new Vector3 (1, 1, 1), 0.2f);
+			Sound_Manager.instance.PlaySoundFX (dispenser_audio_source, 1, 0);
 
 		} 
 		else 

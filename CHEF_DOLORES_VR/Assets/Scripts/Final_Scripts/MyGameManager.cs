@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.VR;
+using UnityEngine.SceneManagement;
 
 public class MyGameManager : MonoBehaviour {
 
@@ -16,6 +17,7 @@ public class MyGameManager : MonoBehaviour {
 	public Text dishes_label, score_label, time_label;
 	public Slider time_slider;
 	GameObject spawneddish;
+	bool isGameOver = false;
 
 
 
@@ -34,11 +36,14 @@ public class MyGameManager : MonoBehaviour {
 	{
 		CountdownTimer ();
 
-		if (game_time <= 0) 
+		if (game_time <= 0 && isGameOver == false) 
 		{
+			isGameOver = true;
 			Debug.Log ("GAME OVER");
 			time_label.text = "RESULTADO";
 			spawneddish.transform.DOScale (Vector3.zero, 0.2f);
+			SaveResults ();
+			StartCoroutine (LoadSceneWithDelay ());
 		}
 	}
 
@@ -72,4 +77,23 @@ public class MyGameManager : MonoBehaviour {
 		VRSettings.enabled = false;
 	}
 		
+	public void SaveResults()
+	{
+		PlayerPrefs.SetString ("Last_Nombre", Datos_Script.instance.nombre);
+		PlayerPrefs.SetString ("Last_Ticket", Datos_Script.instance.ticket);
+		PlayerPrefs.SetString ("Last_Plaza", Datos_Script.instance.plaza);
+		PlayerPrefs.SetString ("Last_Cadena", Datos_Script.instance.cadena);
+		PlayerPrefs.SetString ("Last_Premio", Datos_Script.instance.premio);
+		PlayerPrefs.SetInt ("Last_Platillos", finished_dishes);
+		PlayerPrefs.SetInt ("Last_Puntos", score);
+		string fecha = System.DateTime.Now.ToString();
+		PlayerPrefs.SetString("Last_Fecha", fecha);
+	}
+
+	IEnumerator LoadSceneWithDelay()
+	{
+		yield return new WaitForSeconds (5);
+		SceneManager.LoadScene (0);
+	}
+
 }

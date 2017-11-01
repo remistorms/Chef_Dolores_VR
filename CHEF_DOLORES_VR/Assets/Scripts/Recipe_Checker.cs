@@ -40,6 +40,7 @@ public class Recipe_Checker : MonoBehaviour {
 					raycaster_reference.held_item = null;
 					//change sprite to checkmark
 					dish_script_ref.ingredient_slot_01.sprite = dish_script_ref.checkmark;
+					Sound_Manager.instance.PlaySoundFX (dish_script_ref.dish_audio_source, 4, 0);
 					//WILL THIS WORK?
 					dish_script_ref.total_ingredients = dish_script_ref.total_ingredients - 1;
 				}
@@ -52,6 +53,7 @@ public class Recipe_Checker : MonoBehaviour {
 					raycaster_reference.held_item = null;
 					//change sprite to checkmark
 					dish_script_ref.ingredient_slot_02.sprite = dish_script_ref.checkmark;
+					Sound_Manager.instance.PlaySoundFX (dish_script_ref.dish_audio_source, 4, 0);
 					//WILL THIS WORK?
 					dish_script_ref.total_ingredients = dish_script_ref.total_ingredients - 1;
 				}
@@ -64,6 +66,7 @@ public class Recipe_Checker : MonoBehaviour {
 					raycaster_reference.held_item = null;
 					//change sprite to checkmark
 					dish_script_ref.ingredient_slot_03.sprite = dish_script_ref.checkmark;
+					Sound_Manager.instance.PlaySoundFX (dish_script_ref.dish_audio_source, 4, 0);
 					//WILL THIS WORK?
 					dish_script_ref.total_ingredients = dish_script_ref.total_ingredients - 1;
 				}
@@ -76,6 +79,7 @@ public class Recipe_Checker : MonoBehaviour {
 					raycaster_reference.held_item = null;
 					//change sprite to checkmark
 					dish_script_ref.ingredient_slot_04.sprite = dish_script_ref.checkmark;
+					Sound_Manager.instance.PlaySoundFX (dish_script_ref.dish_audio_source, 4, 0);
 					//WILL THIS WORK?
 					dish_script_ref.total_ingredients = dish_script_ref.total_ingredients - 1;
 				}
