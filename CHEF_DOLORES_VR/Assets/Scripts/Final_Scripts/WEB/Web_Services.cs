@@ -22,6 +22,7 @@ public class Web_Services : MonoBehaviour {
 
 	public void FillAllStrings()
 	{
+		ClearPremios ();
 		
 		full_string_to_send = "http://www.ispinnova.com.mx/app2017/get_premios.php?" + "i=" + Datos_Script.instance.cadena; 
 
@@ -48,7 +49,9 @@ public class Web_Services : MonoBehaviour {
 
 	public void ClearPremios()
 	{
-		
+		super_string_lista = "";
+		premios.Clear ();
+		puntaje.Clear ();
 	}
 
 }

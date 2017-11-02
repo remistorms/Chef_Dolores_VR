@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu_Script : MonoBehaviour {
 
+	public static Menu_Script instance; 
+
 	public float fade_time = 0.5f;
 	public GameObject[] menu_window;
 	public List<RectTransform> menu_rects;
@@ -18,6 +20,8 @@ public class Menu_Script : MonoBehaviour {
 
 	void Awake()
 	{
+		instance = this;
+
 		for (int i = 0; i < menu_window.Length; i++) 
 		{
 			//Gets all rect transform and canvas group inside the windwo_menu array

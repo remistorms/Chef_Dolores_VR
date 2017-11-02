@@ -18,5 +18,8 @@ public class BotonPremio : MonoBehaviour {
 	void SetPremio()
 	{
 		Datos_Script.instance.premio = premio_label.text;
+		Menu_Script.instance.SwapMenuScreen (14);
 	}
+
+
 }
