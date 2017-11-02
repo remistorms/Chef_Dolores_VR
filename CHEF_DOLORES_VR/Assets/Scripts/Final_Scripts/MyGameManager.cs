@@ -18,6 +18,7 @@ public class MyGameManager : MonoBehaviour {
 	public Slider time_slider;
 	GameObject spawneddish;
 	bool isGameOver = false;
+	bool lastMoments = false;
 
 
 
@@ -45,6 +46,10 @@ public class MyGameManager : MonoBehaviour {
 			SaveResults ();
 			StartCoroutine (LoadSceneWithDelay ());
 		}
+
+		if (isGameOver) {
+			time_label.text = "RESULTADO";
+		}
 	}
 
 	public void SpawnNewDish()
@@ -57,6 +62,16 @@ public class MyGameManager : MonoBehaviour {
 		game_time -= Time.deltaTime;
 		time_label.text = "Tiempo: " + Mathf.Floor (game_time).ToString ();
 		time_slider.value = Mathf.Floor (game_time);
+
+		if (Mathf.Floor(game_time) == 10 && lastMoments == false) {
+			lastMoments = true;
+			StartCoroutine (LastMoments ());
+		}
+
+		if (Mathf.Floor(game_time) == 0) 
+		{
+			SaveResults ();	
+		}
 	}
 
 	public void AddPlatillo(int cantidad)
@@ -86,7 +101,7 @@ public class MyGameManager : MonoBehaviour {
 		PlayerPrefs.SetString ("Last_Premio", Datos_Script.instance.premio);
 		PlayerPrefs.SetInt ("Last_Platillos", finished_dishes);
 		PlayerPrefs.SetInt ("Last_Puntos", score);
-		string fecha = System.DateTime.Now.ToString();
+		string fecha = System.DateTime.Now.ToString("yyyyMMdd");
 		PlayerPrefs.SetString("Last_Fecha", fecha);
 	}
 
@@ -94,6 +109,16 @@ public class MyGameManager : MonoBehaviour {
 	{
 		yield return new WaitForSeconds (5);
 		SceneManager.LoadScene (0);
+	}
+
+	IEnumerator LastMoments()
+	{
+		for (int i = 0; i < 10; i++) 
+		{
+			Sound_Manager.instance.PlaySoundFX (Sound_Manager.instance.player_source, 6, 0);
+			yield return new WaitForSeconds (1);
+		}
+
 	}
 
 }

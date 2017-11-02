@@ -26,7 +26,7 @@ public class Manager_Web : MonoBehaviour {
 
 	
 
-	public void Initialize()
+	public void Awake()
 	{
 		instance = this;
 	}

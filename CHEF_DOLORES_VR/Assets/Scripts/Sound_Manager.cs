@@ -6,6 +6,7 @@ public class Sound_Manager : MonoBehaviour {
 	public static Sound_Manager instance;
 	public AudioClip[] sound_fx;
 	//public AudioSource main_audio_source;
+	public AudioSource player_source;
 
 
 	void Awake()

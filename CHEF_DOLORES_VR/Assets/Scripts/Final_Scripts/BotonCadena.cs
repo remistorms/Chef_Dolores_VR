@@ -18,5 +18,6 @@ public class BotonCadena : MonoBehaviour {
 	void SetCadena()
 	{
 		Datos_Script.instance.cadena = cadena_label.text;
+		Web_Services.instance.GetPremios ();
 	}
 }

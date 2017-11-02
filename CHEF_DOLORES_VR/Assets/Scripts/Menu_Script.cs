@@ -14,6 +14,7 @@ public class Menu_Script : MonoBehaviour {
 	public Button[] premio_buttons;
 	public Text number_counter;
 	int current_screen;
+	public AudioSource main_source;
 
 	void Awake()
 	{
@@ -70,6 +71,11 @@ public class Menu_Script : MonoBehaviour {
 		}
 
 		SceneManager.LoadScene (scene);
+	}
+
+	public void PlayButtonSound()
+	{
+		main_source.Play ();
 	}
 
 }
