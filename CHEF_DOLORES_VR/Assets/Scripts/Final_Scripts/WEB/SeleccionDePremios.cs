@@ -28,7 +28,7 @@ public class SeleccionDePremios : MonoBehaviour {
 			botones_creados.Add (premio_btn);
 			premio_btn.name = web_services.premios [i];
 			premio_btn.GetComponentInChildren<Text> ().text = web_services.premios [i];
-			tempInt = i;
+
 			premio_btn.GetComponent<Button> ().onClick.AddListener (() => PremioButtonClick (tempInt));
 
 		}

@@ -15,7 +15,7 @@ public class ResultadoScreen : MonoBehaviour {
 		cadena_label.text = "Cadena: " + PlayerPrefs.GetString ("Last_Cadena");
 		premio_label.text = "Premio: " + PlayerPrefs.GetString ("Last_Premio");
 		platillos_label.text = "Platillos: " + PlayerPrefs.GetInt ("Last_Platillos");
-		puntos_label.text = "Puntos: " + PlayerPrefs.GetInt ("Last_Puntos");
+		puntos_label.text = "Puntos: " + PlayerPrefs.GetInt ("Last_Puntos") + " / " + PlayerPrefs.GetString("ScoreNeeded");
 		fecha_label.text = "Fecha y hora: " + PlayerPrefs.GetString ("Last_Fecha");
 	}
 }

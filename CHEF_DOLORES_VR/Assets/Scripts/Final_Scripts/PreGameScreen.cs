@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PreGameScreen : MonoBehaviour {
 
-	public Text nombre_label, ticket_label, plaza_label, cadena_label, premio_label;
+	public Text nombre_label, ticket_label, plaza_label, cadena_label, premio_label, score_needed;
 
 	void FixedUpdate()
 	{
@@ -14,5 +14,6 @@ public class PreGameScreen : MonoBehaviour {
 		plaza_label.text = "Plaza: " + Datos_Script.instance.plaza;
 		cadena_label.text = "Cadena: " + Datos_Script.instance.cadena;
 		premio_label.text = "Premio: " + Datos_Script.instance.premio;
+		score_needed.text = "Score Needed : " + PlayerPrefs.GetString ("ScoreNeeded");
 	}
 }

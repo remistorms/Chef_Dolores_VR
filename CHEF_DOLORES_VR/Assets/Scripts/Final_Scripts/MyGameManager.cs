@@ -19,6 +19,8 @@ public class MyGameManager : MonoBehaviour {
 	GameObject spawneddish;
 	bool isGameOver = false;
 	bool lastMoments = false;
+	public int points_needed_int;
+	public string game_result;
 
 
 
@@ -71,6 +73,7 @@ public class MyGameManager : MonoBehaviour {
 		if (Mathf.Floor(game_time) == 0) 
 		{
 			SaveResults ();	
+			CheckResults ();
 		}
 	}
 
@@ -119,6 +122,22 @@ public class MyGameManager : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 		}
 
+	}
+
+	public void CheckResults()
+	{
+		string points_needed = PlayerPrefs.GetString ("ScoreNeeded");
+		points_needed_int = System.Int32.Parse (points_needed);
+
+		if (score >= points_needed_int) {
+			game_result = "GANO";
+		} 
+		else 
+		{
+			game_result = "PERDIO";
+		}
+
+		PlayerPrefs.SetString ("Resultado", game_result);
 	}
 
 }
