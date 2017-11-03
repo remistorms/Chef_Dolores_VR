@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final_Game_Scene.unity
     guid: de9da7375b9334a419417e29c4913e4b
+  - enabled: 1
+    path: Assets/Scenes/Resultado_End_Game.unity
+    guid: b31cf317ecc95894285d2292444b6c7a

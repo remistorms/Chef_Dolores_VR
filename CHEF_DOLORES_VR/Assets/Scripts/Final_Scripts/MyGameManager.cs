@@ -111,7 +111,7 @@ public class MyGameManager : MonoBehaviour {
 	IEnumerator LoadSceneWithDelay()
 	{
 		yield return new WaitForSeconds (5);
-		SceneManager.LoadScene (0);
+		SceneManager.LoadScene (2);
 	}
 
 	IEnumerator LastMoments()
